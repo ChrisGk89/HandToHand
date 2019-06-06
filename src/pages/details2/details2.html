@@ -1,0 +1,42 @@
+
+<!-- THIS IS THE PAGE WHERE THE USER COULD EDIT ALL THE DETAILS ABOUT BORROW -->
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Update Borrow Post
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="user-image-content">
+    <ion-row no-padding class="user-image-row">
+      <ion-col no-padding col-6 offset-3>
+        <img [src]="image2" alt="this is the image"/>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding class="user-image-row">
+      <ion-col no-padding width-60>
+        <button class="image-action-button" ion-button outline block small (click)="openImagePicker2()">Change Picture</button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <form class="new-user-form" [formGroup]="validations_form2" (ngSubmit)="onSubmit(validations_form2.value)">
+    <ion-item>
+      <ion-label floating color="primary">Full name</ion-label>
+      <ion-input type="text" formControlName="fullname2" class="form-control" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Title</ion-label>
+      <ion-input type="text" formControlName="title2" class="form-control" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Description</ion-label>
+      <ion-input type="text" formControlName="description2" class="form-control" required></ion-input>
+    </ion-item>
+    <button class="form-action-button" ion-button block type="submit" [disabled]="!validations_form2.valid">Save</button>
+  </form>
+  <button class="form-action-button" ion-button block color="danger" (click)="delete2()">Delete</button>
+
+</ion-content>

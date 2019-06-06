@@ -1,0 +1,37 @@
+
+<!-- THIS IS THE PAGE WHERE THE USERS COULD MANAGE ALL THEIR JOBS -->
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Local Jobs</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="dismiss()">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="list-mini-content">
+  <div class="list-mini">
+    <ion-list>
+      <ion-item *ngFor="let item4 of items" (click)="viewDetails4(item4.payload.doc.id,item4.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item4.payload.doc.data().image4">
+        </ion-thumbnail>
+        <h2>{{item4.payload.doc.data().fullname4}}</h2>
+        <h2>{{item4.payload.doc.data().title4}}</h2>
+        <h3>{{item4.payload.doc.data().description4}}</h3>
+        <button ion-button clear item-end>Edit</button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer (click)="openNewUserModal4()">
+  <ion-toolbar color="secondary">
+    <ion-title>Add a new post</ion-title>
+  </ion-toolbar>
+</ion-footer>

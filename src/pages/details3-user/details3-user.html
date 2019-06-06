@@ -1,0 +1,47 @@
+<!--
+  Generated template for the Details3UserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<!-- THIS IS THE PAGE WHERE THE USER COULD SEE ALL THE DETAILS ABOUT SALES -->
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Offer Details
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="user-image-content">
+    <ion-row no-padding class="user-image-row">
+      <ion-col no-padding col-6 offset-3>
+        <img [src]="image3" alt="this is the image"/>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding class="user-image-row">
+      <ion-col no-padding width-60>
+      </ion-col>
+    </ion-row>
+  </div>
+  <form class="new-user-form" [formGroup]="validations_form3" (ngSubmit)="onSubmit(validations_form3.value)">
+    <ion-item>
+      <ion-label floating color="primary">Full name</ion-label>
+      <ion-input type="text" formControlName="fullname3" class="form-control" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Title</ion-label>
+      <ion-input readonly="true" type="text" formControlName="title3" class="form-control" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Description</ion-label>
+      <ion-input readonly="true" type="text" formControlName="description3" class="form-control" required></ion-input>
+    </ion-item>
+
+    <button class="button1" ion-button color="danger"> Get in touch! </button> <button  class="button2" ion-button color="secondary" (click)="openMap()">Open Map</button>
+  </form>
+
+</ion-content>

@@ -1,0 +1,103 @@
+
+<!-- THIS IS THE PAGE WHERE THE USERS COULD MANAGE ALL THEIR POSTS -->
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Manage your Posts</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding class="welcome-page">
+
+
+  <div>
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%; height: 350px">
+      <ion-card-header>
+        <img class="image" src="assets/imgs/edit.png"/>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-card-title style="color: #32db64; font-weight: bold; font-size:large">Edit your Donations Posts</ion-card-title>
+      </ion-card-content>
+      <ion-card-content>
+        Here you can edit your donations or if you don't have any consider make one.
+        Caring is sharing. Spread the love.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%; margin-top: 40px" (click)="DonationPage()">Manage</button>
+    </ion-card>
+
+
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%; height: 350px">
+      <ion-card-header>
+        <img class="image" src="assets/imgs/edit.png"/>
+      </ion-card-header>
+
+      <ion-card-content>
+      <ion-card-title style="color: #32db64; font-weight: bold; font-size:large;">Edit Your Borrow/Exchange Posts</ion-card-title>
+      </ion-card-content>
+
+      <ion-card-content class="p">
+        Here you can edit your things that you want to borrow or exchange. If you have unused items consider to add a post.
+        You can give new life to the things you don't want.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%; margin-top: 0px" (click)="BorrowPage()">Manage</button>
+    </ion-card>
+
+
+    <!-- <ion-card class="navigation">
+      <img src="https://images.pexels.com/photos/1376968/pexels-photo-1376968.jpeg?cs=srgb&dl=background-bandana-cheerful-1376968.jpg&fm=jpg">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size:x-large">Share</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        For the cities that Uber don't work, find a neighbor.
+        You can share a ride to work, to city center or to the beach.
+      </ion-card-content>
+      <button ion-button color="secondary" style="margin-bottom: 5%" (click)="SharePage()">Explore</button>
+    </ion-card> -->
+
+
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%; height: 350px">
+      <ion-card-header>
+        <img class="image" src="assets/imgs/edit.png"/>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-card-title style="color: #32db64; font-weight: bold; font-size:large">Edit Your Food Sales & Offers Posts</ion-card-title>
+      </ion-card-content>
+
+      <ion-card-content>
+        Here you can edit your food sales if you are a business that cares. Don't waste food. Make offers or donate.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%; margin-top: 20px" (click)="SalesPage()">Manage</button>
+    </ion-card>
+
+
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%; height: 350px">
+      <ion-card-header>
+        <img class="image" src="assets/imgs/edit.png"/>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-card-title style="color:#32db64; font-weight: bold; font-size:large">Edit Your Local Jobs Posts</ion-card-title>
+      </ion-card-content>
+
+      <ion-card-content>
+        Here you can find your seasonal job posts.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%; margin-top: 75px" (click)="JobsPage()">Manage</button>
+    </ion-card>
+  </div>
+
+
+</ion-content>

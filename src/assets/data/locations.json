@@ -1,0 +1,62 @@
+{
+  "locations": [
+
+    {
+      "title": "City Hall",
+      "latitude": 39.637697,
+      "longitude": 22.415091
+    },
+    {
+      "title": "Social Grocery Larisa",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+    {
+      "title": "Social Grocery Farsala",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+    {
+      "title": "Social Grocery Trikala",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+    {
+      "title": "Social Grocery Karditsa",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+    {
+      "title": "Social Grocery Tyrnavos",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+    {
+      "title": "Community Center Larisa",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+    {
+      "title": "Community Center Trikala",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+    {
+      "title": "Community Center Farsala",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+
+    {
+      "title": "Community Center Karditsa",
+      "latitude": 39.639665,
+      "longitude": 22.413868
+    },
+
+    {
+      "title": "Community Center Tyrnavos",
+      "latitude": 39.639665,
+      "longitude": 22.41386
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "HandToHand",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

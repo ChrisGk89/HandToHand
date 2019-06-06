@@ -1,0 +1,37 @@
+
+<!-- THIS IS THE PAGE WHERE THE USERS COULD MANAGE ALL THEIR BORROW-->
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Borrow/Exchange</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="dismiss()">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="list-mini-content">
+  <div class="list-mini">
+    <ion-list>
+      <ion-item *ngFor="let item2 of items" (click)="viewDetails2(item2.payload.doc.id,item2.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item2.payload.doc.data().image2">
+        </ion-thumbnail>
+        <h2>{{item2.payload.doc.data().fullname2}}</h2>
+        <h2>{{item2.payload.doc.data().title2}}</h2>
+        <h3>{{item2.payload.doc.data().description2}}</h3>
+        <button ion-button clear item-end>Edit</button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer (click)="openNewUserModal2()">
+  <ion-toolbar color="secondary">
+    <ion-title>Add a new post</ion-title>
+  </ion-toolbar>
+</ion-footer>

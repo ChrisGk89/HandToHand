@@ -1,0 +1,37 @@
+
+<!-- THIS IS THE PAGE WHERE THE USERS COULD MANAGE ALL THEIR SALES -->
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Food Sales and Offers</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="dismiss()">
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="list-mini-content">
+  <div class="list-mini">
+    <ion-list>
+      <ion-item *ngFor="let item3 of items" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h2>{{item3.payload.doc.data().fullname3}}</h2>
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Edit</button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer (click)="openNewUserModal3()">
+  <ion-toolbar color="secondary">
+    <ion-title>Add a new post</ion-title>
+  </ion-toolbar>
+</ion-footer>

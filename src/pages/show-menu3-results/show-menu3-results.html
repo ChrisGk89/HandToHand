@@ -1,0 +1,468 @@
+
+<!-- THIS IS THE PAGE WHERE THE USERS COULD SEE DETAILS ABOUT SALES -->
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Find local foodchain sales</ion-title>
+
+    <ion-buttons start>
+      <button ion-button icon-only (click)="dismiss()">
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+<ion-content class="list-mini-content">
+  <div class="list-mini">
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales2" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales3" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales4" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales5" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales6" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales7" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales8" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales9" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales10" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales11" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales12" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales13" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales14" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales15" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales16" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales17" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales18" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales19" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales20" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales21" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales22" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales23" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales24" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales25" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales26" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales27" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales28" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales29" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales30" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales31" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item *ngFor="let item3 of sales32" (click)="viewDetails3(item3.payload.doc.id,item3.payload.doc.data())">
+        <ion-thumbnail item-start>
+          <img [src]="item3.payload.doc.data().image3">
+        </ion-thumbnail>
+        <h1>{{item3.payload.doc.data().fullname3}}</h1>
+
+        <h2>{{item3.payload.doc.data().title3}}</h2>
+        <h3>{{item3.payload.doc.data().description3}}</h3>
+        <button ion-button clear item-end>Details</button>
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>

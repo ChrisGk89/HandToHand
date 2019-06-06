@@ -1,0 +1,103 @@
+
+<!-- THIS IS THE PAGE WHERE THE USERS COULD SEE THE MENU -->
+
+<ion-header>
+  <ion-navbar color="secondary">
+
+    <ion-title>Community Feed</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding class="welcome-page">
+
+
+  <div>
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size: xx-large">Donations</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+      <img src="https://images.pexels.com/photos/1409716/pexels-photo-1409716.jpeg?cs=srgb&dl=balloons-charity-colorful-1409716.jpg&fm=jpg">
+      </ion-card-content>
+
+      <ion-card-content>
+        Here you can find donations from families, local stores and restaurants.
+        You can find food, clothes, toys and many other things.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="DonationPage()">Explore</button>
+    </ion-card>
+
+
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size:xx-large">Borrow/Exchange</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      <img src="https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?cs=srgb&dl=hammer-hand-tools-measuring-tape-175039.jpg&fm=jpg">
+      </ion-card-content>
+      <ion-card-content>
+        Here you can borrow clothes that don't fit, tools that you don't need.
+        Vehicles, machineries and spare parts. Give life to unused items.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="BorrowPage()">Explore</button>
+    </ion-card>
+
+
+    <!-- <ion-card class="navigation">
+      <img src="https://images.pexels.com/photos/1376968/pexels-photo-1376968.jpeg?cs=srgb&dl=background-bandana-cheerful-1376968.jpg&fm=jpg">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size:x-large">Share</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        For the cities that Uber don't work, find a neighbor.
+        You can share a ride to work, to city center or to the beach.
+      </ion-card-content>
+      <button ion-button color="secondary" style="margin-bottom: 5%" (click)="SharePage()">Explore</button>
+    </ion-card> -->
+
+
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size:x-large">Food Sales and Offers</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      <img src="https://images.pexels.com/photos/5485/handwritten-italian-marketing-menu.jpg?cs=srgb&dl=handwritten-italian-marketing-5485.jpg&fm=jpg">
+      </ion-card-content>
+
+      <ion-card-content>
+        Here you can find sales from local groceries, restaurants & taverns.
+        High quality food that didn't get consumed through the day could be offered in very low prices.
+        Fruits and Vegetables which are not good looking but hold their nutritional value could be included.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="SalesPage()">Explore</button>
+    </ion-card>
+
+
+    <ion-card class="navigation" style="align-content: center; border-radius: 5%">
+      <ion-card-header>
+        <ion-card-title style="color:#32db64; font-size:x-large">Local Jobs</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      <img src="https://images.pexels.com/photos/1881334/pexels-photo-1881334.jpeg?cs=srgb&dl=agriculture-animals-basket-1881334.jpg&fm=jpg">
+      </ion-card-content>
+      <ion-card-content>
+        Here you can find seasonal job opportunities in agriculture and other local businesses.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="JobsPage()">Explore</button>
+    </ion-card>
+  </div>
+
+
+</ion-content>

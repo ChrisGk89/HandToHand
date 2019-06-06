@@ -1,0 +1,78 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Eco Tips</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="welcome-page">
+
+
+  <!-- THIS IS THE PAGE WHERE THE USER COULD SEE SOME USEFUL ECO TIPS -->
+
+
+  <div>
+    <ion-card class="navigation" style="align-content: center">
+      <img src="https://images.pexels.com/photos/1076807/pexels-photo-1076807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size:x-large">Green Tips and ways</ion-card-title>
+        <ion-card-title style="color: #32db64; font-size:x-large">to reduce food waste.</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h2>
+        You can learn smart tips for a more sustainable life reducing food waste and promoting sustainability.
+        </h2>
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="info1()">Learn</button>
+    </ion-card>
+
+
+    <ion-card class="navigation">
+      <img src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size:x-large">Social Sustainability</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Learn about the principles that make a sustainable society and find interesting ways to help people in need.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="info2()">Learn</button>
+    </ion-card>
+
+
+
+    <ion-card class="navigation">
+      <img src="https://images.pexels.com/photos/421888/pexels-photo-421888.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+      <ion-card-header>
+        <ion-card-title style="color: #32db64; font-size:x-large">Reuse & Recycle</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        All the benefits of circular economy in one page. Learn some tricks to give a new life to everything around you. Learn the value of giving or lend the unused things and promote sustainability.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="info3()">Learn</button>
+    </ion-card>
+
+
+    <ion-card class="navigation">
+      <img src="https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+      <ion-card-header>
+        <ion-card-title style="color:#32db64; font-size:x-large">Supporting Local Economy</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Communities are strong when people support each other inside it. You have the power to help and every little individual action brings great results long-term.
+      </ion-card-content>
+      <button class="button" ion-button color="secondary" style="margin-bottom: 5%" (click)="info4()">Learn</button>
+    </ion-card>
+  </div>
+</ion-content>
+
